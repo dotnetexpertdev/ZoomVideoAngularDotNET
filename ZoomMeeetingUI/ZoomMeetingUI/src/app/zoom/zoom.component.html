@@ -1,0 +1,30 @@
+<h2 class="center-aligned">Join Meeting</h2>
+<div id="meetingSDKElement">
+  <!-- Zoom Meeting SDK Component View Rendered Here -->
+</div>
+
+<div class="form-container">
+   <div class="form-group">
+    <label for="meetingNumber">Meeting No:</label>
+    <input type="text" id="meetingNumber" [(ngModel)]="meetingNumber" />
+  </div> 
+  <div class="form-group">
+    <label for="passWord">Password:</label>
+    <input type="text" id="passWord" [(ngModel)]="passWord" />
+  </div> 
+  <div class="form-group">
+    <label for="userName">User Name:</label>
+    <input type="text" id="userName" [(ngModel)]="userName" />
+  </div> 
+  <div class="form-group">
+    <label for="userEmail">User Email:</label>
+    <input type="text" id="userEmail" [(ngModel)]="userEmail" />
+  </div> 
+  <div class="form-group">
+    <label for="isHost"> Is Host:</label>
+    <input type="checkbox" id="isHost" [(ngModel)]="isHost"  style="margin-left:-450px;"/>
+  </div> 
+  <div class="form-group">
+    <button (click)="getSignature()">Join Meeting</button>
+  </div>
+</div>
